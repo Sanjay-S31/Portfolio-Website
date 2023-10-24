@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="loading">
+        <span>L</span>
+        <span>O</span>
+        <span>A</span>
+        <span>D</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>.</span>
+        <span>.</span>
+      </div>
+    </div>
+    <nav id="desktop-nav">
+      <div class="logo">&lt; $anjay S /&gt;</div>
+      <div class="navbars">
+        <ul class="nav-links">
+          <li><a href="#profile">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> &lt; Sanjay S &gt; </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#profile" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/assets/profile_pic.jpeg" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <h2>Hi 👋👋, I am
+          <div class="bouncing-text">
+            <div class="b">S</div>
+            <div class="o">A</div>
+            <div class="u">N</div>
+            <div class="n">J</div>
+            <div class="c">A</div>
+            <div class="e">Y</div>
+            <div class="shadow"></div>
+            <div class="shadow-two"></div>
+          </div>
+        </h2>
+        <br>
+        <h3>Interest towards</h3>
+        <p class="word"></p>
+        <div class="btn-container">
+          <p>Follow me on : <i class="fa-brands fa-linkedin-in fa-beat" id="linkedin" style="color: white;"></i>
+            <i class="fa-brands fa-github fa-beat" id="github" style="color: #ffffff;"></i>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="reveal">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="about-container">
+        <div class="about-sidebox">
+          <div class="sidebox-profile">
+            <img src="assets/profile_pic2.jpeg" alt="">
+            <h2 style="color: rgb(11, 234, 234);">SANJAY S</h2>
+          </div>
+          <div class="sidebox-content">
+            <i class="fa-regular fa-envelope fa-fade" style="color: #dbc00f;"></i>
+            <div class="sidebox-details">
+              <h2>Email :</h2>
+              <span>sanjay2003877@gmail.com</span>
+            </div>
+          </div>
+          <div class="sidebox-content">
+            <i class="fa-solid fa-phone fa-shake" style="color: #dbc00f;"></i>
+            <div class="sidebox-details">
+              <h2>Phone :</h2>
+              <span>+91 8778644167</span>
+            </div>
+          </div>
+          <div class="sidebox-content">
+            <i class="fa-solid fa-calendar-days fa-fade" style="color: #dbc00f;"></i>
+            <div class="sidebox-details">
+              <h2>Birthday :</h2>
+              <span>06/11/2003</span>
+            </div>
+          </div>
+          <div class="sidebox-content">
+            <i class="fa-solid fa-location-dot fa-bounce" style="color: #dbc00f;"></i>
+            <div class="sidebox-details">
+              <h2>Location :</h2>
+              <span>Chennai, Tamilnadu, India</span><br>
+            </div>
+          </div>  
+        </div>
+        <div class="about-content">
+            <p>
+              Hello! I'm Sanjay S., a pre-final year student pursuing my bachelor's degree in Computer Science and
+              Engineering at Rajalakshmi Engineering College. I believe in the power of motivation and strive to make 
+              a positive impact through my experiences, both in and out of the classroom.
+            </p>
+            <br>
+            <p>
+              I bring to the table a unique set of skills, including programming languages, communication, and 
+              being a team player. My strengths include I am attentive, problem-solving, and adaptability, which 
+              I believe are vital in the IT industry.
+            </p>
+            <div class="timeline">
+              <div class="timeline-container">
+                <img src="assets/rec-logo.jpg" alt="" width="50px" height="50px">
+                <div class="timeline-content">
+                  <h2>Rajalakshmi Engineering College</h2>
+                  <p>2021 - 2025</p>
+                  <p></p>
+                  <span class="left-arrow"></span>
+                </div>
+              </div>
+              <div class="timeline-container">
+                <img src="assets/school-log.jpeg" alt="" width="50px" height="50px">
+                <div class="timeline-content">
+                  <h2>Leo Marticulation Higher Secondary School</h2>
+                  <p>2006 - 2021</p>
+                  <p></p>
+                  <span class="left-arrow"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <i id="arr1" class="fa-solid fa-arrow-down fa-bounce" style="color: #ffffff;" onclick="location.href='./#experience'"></i>
+    </section>
+    <section id="experience" class="reveal">
+      <h1>My Skills</h1>
+      <div class="skills_div">
+        <div class="skill">
+          <h1>Web Dev Skills</h1>
+          <div class="sk"><li><h3>HTML</h3><span class="bar"><span class="html"></span></span></li></div>
+          <div class="sk"><li><h3>CSS</h3><span class="bar"><span class="css"></span></span></li></div>
+          <div class="sk"><li><h3>JAVASCRIPT</h3><span class="bar"><span class="js"></span></span></li></div>
+          <div class="sk"><li><h3>PHP</h3><span class="bar"><span class="php"></span></span></li></div>
+        </div>
+        <div class="skill">
+          <h1>Programming Skills</h1>
+          <div class="sk"><li><h3>C</h3><span class="bar"><span class="cp"></span></span></li></div>
+          <div class="sk"><li><h3>C++</h3><span class="bar"><span class="cpp"></span></span></li></div>
+          <div class="sk"><li><h3>PYTHON</h3><span class="bar"><span class="python"></span></span></li></div>
+          <div class="sk"><li><h3>JAVA</h3><span class="bar"><span class="java"></span></span></li></div>
+        </div>
+      </div>
+      <i id="arr2" class="fa-solid fa-arrow-down fa-bounce" style="color: #ffffff;" onclick="location.href='./#projects'"></i>
+    </section>
+    <section id="projects" class="reveal">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="proj">
+        <div class="card-container">
+          <div class="card">
+            <div class="front" id="ml">
+              <h3>Sentimental Analysis of Restaurant Reviews</h3>
+            </div>
+            <div class="back">
+              <h1><u>Description</u></h1>
+              <p>The main objective of our project is to accurately extract people’s opinions from a large number 
+                of unstructured review texts and classify them into either positive or negative review.</p>
+              <p>Thus, we have created a binary classification machine learning model(positive/negative) for 
+                customer reviews received by the restaurant.Restaurants can see their overall performance by seeing number of
+                 positive and negative reviews and can improve them.
+              </p>
+              <button onclick="window.location.href='https:/github.com/Sanjay-S31/Sentiment-Analysis-of-Restaurant-Reviews'">View Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="front" id="chatbot">
+              <h3>College Enquiry Chatbot</h3>
+            </div>
+            <div class="back">
+              <h1><u>Description</u></h1>
+              <p>The aim of a college enquiry chatbot is to provide a personalized and efficient
+                experience for prospective students, faculties, visitors and parents helping them
+                navigate the admission process with ease.</p>
+                <p>The objectives of a college enquiry chatbot are focused on providing accurate
+                  information, personalized assistance, and a positive user experience to
+                  prospective students, faculties, visitors and parents helping them make informed
+                  decisions about their college choices.</p> 
+              <button onclick="window.location.href='https:/github.com/Sanjay-S31/College-Enquiry-ChatBot'">View Code</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <i id="arr3" class="fa-solid fa-arrow-down fa-bounce" style="color: #ffffff;" onclick="location.href='./#contact'"></i>
+    </section>
+    <section id="contact" class="reveal">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="new-cont">
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <p><i class="fa-solid fa-envelope fa-beat" style="color: #d5d9e2;"></i><a href="mailto:sanjay2003877mail@gmail.com">E-mail ID</a></p>
+          </div>
+          <div class="contact-info-container">
+            <p><i class="fa-brands fa-linkedin-in fa-beat" style="color: #145fe1;"></i><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+          <div class="contact-info-container">
+            <p><i class="fa-brands fa-github fa-beat" id="github" style="color: #ffffff;"></i><a href="https://github.com/Sanjay-S31">GitHub</a></p>
+          </div>
+        </div>
+        <hr>
+        <div class="center">
+          <h1>Contact</h1>
+          <form action="https://formsubmit.co/sanjay2003877@gmail.com" method="POST">
+    
+            <div class="txt_field">
+              <input type="text" name="name" id="name" required>
+              <span></span>
+              <label>Full Name</label>
+            </div>
+    
+            <div class="txt_field">
+                <input type="text" name="email" id="email" required>
+                <span></span>
+                <label>Email</label>
+              </div>
+    
+            <div class="txt_field">
+              <input type="text" name="message" id="message" required>
+              <span></span>
+              <label>Message</label>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="hidden" name="_template" value="table">
+          </form>
+        </div>
+      </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links" id="bottom-nav">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p style="text-align: center;">Copyright &#169; 2023 Sanjay. All Rights Reserved.</p>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
